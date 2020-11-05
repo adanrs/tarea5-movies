@@ -1,5 +1,5 @@
 <h4 style="margin-top: 15px">{{ title }}</h4>
-<h5>Book's details</h5>
+<h5>Movie's details</h5>
 <form>
   <div class="row">
     <div class="six columns">
@@ -21,11 +21,21 @@
        <input class="u-full-width" type="text" id="Description" value="{{ Description }}" readonly/>
     </div>
   </div>
+  <div class="six columns">
+    <label for="DescriptionInput">Description</label>
+    <input class="u-full-width" type="text" id="Description" value="{{ Description }}" readonly/>
+ </div>
+</div>
+<div class="six columns">
+  <label for="DescriptionInput">Description</label>
+  <input class="u-full-width" type="text" id="Description" value="{{ Description }}" readonly/>
+</div>
+</div>
   <div class="row">
     <div class="six columns">
-       <label for=" authorInput">Author</label>
-       <a href="https://authors-minisite.netlify.app/get/?id={{ author_id }}">
-         <input class="u-full-width" type="button" id=" author" value="{{ author }}" readonly/>
+       <label for=" authorInput">Director</label>
+       <a href="https://pedantic-clarke-82b458.netlify.app/get/?id={{ _id }}">
+         <input class="u-full-width" type="button" id=" director" value="{{ director }}" readonly/>
        </a>
     </div>
     <div class="six columns">
