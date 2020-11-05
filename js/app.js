@@ -16,7 +16,7 @@ function getById(query) {
     .then((response) => response.text())
     .then((template) => {
 	  var params = new URLSearchParams(query);
-	  var elem = data.find(checkId,params.get('_id'));
+	  var elem = data.find(checkId,params.get('id'));
       var rendered = Mustache.render(template, elem);
       document.getElementById('content').innerHTML = rendered;    
    });
